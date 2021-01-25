@@ -10,24 +10,21 @@
       <p>Введите первое число:</p>
       <input id="inp1" type="number" />
       <p>Введите второе число:</p>
-      <input id="inp2" type="number" /> </br></br>
-      <button class="" onClick="ggg()">Сложить
-        
-      </button>
-    
+      <input id="inp2" type="number" /> <br /><br />
+      <button class="" onClick="ggg()">Сложить</button>
     </form>
     <div id="result"></div>
-      <script language="JavaScript">
-       function ggg(){ 
-        let numbOne  = Number(document.getElementById("inp1").value) ;
-        let numbSecond   = Number(document.getElementById("inp2").value) ;
-        if( numbOne && numbSecond == 0){
-        alert ('Ну это слишком просто, введите корректные значения' );} 
-        else {
-        let sum = +(numbOne + numbSecond);
-        alert("Сумма числел равна : " + sum)}
+    <script language="JavaScript">
+      function ggg() {
+        let numbOne = Number(document.getElementById("inp1").value);
+        let numbSecond = Number(document.getElementById("inp2").value);
+        if (numbOne === 0 && numbSecond === 0) {
+          alert("Ну это слишком просто, введите корректные значения");
+        } else {
+          let sum = numbOne + numbSecond;
+          alert("Сумма числел равна : " + sum);
         }
-
-		  </script>
+      }
+    </script>
   </body>
 </html>
